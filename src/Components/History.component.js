@@ -16,15 +16,27 @@ const style = {
     table: {
         minWidth: '100%'
     },
+    spinner: {
+        paddingTop: '25px'
+    }
 
 };
 
 function History() {
 
     return <SharedSnackbarConsumer>
-        {({showHistory, history, fetchLyrics}) => (
-            <React.Fragment>
-                {showHistory && <div style={style.root}>
+        {({loading, showHistory, history, fetchLyrics}) => (
+            <div style={style.root}>
+                {loading && showHistory &&
+                <div style={style.spinner} className="lds-ring">
+                    <div>{}</div>
+                    <div>{}</div>
+                    <div>{}</div>
+                    <div>{}</div>
+                </div>
+                }
+                {!loading && showHistory &&
+                <React.Fragment>
                     <h1>History</h1>
                     <Table style={style.table} aria-label="simple table">
                         <TableHead>
@@ -36,7 +48,9 @@ function History() {
                         </TableHead>
                         <TableBody>
                             {history.map((row, key) => (
-                                <TableRow key={key} onClick={() => {fetchLyrics(row.artist, row.song, true)}}>
+                                <TableRow key={key} onClick={() => {
+                                    fetchLyrics(row.artist, row.song, true)
+                                }}>
                                     <TableCell component="th" scope="row">
                                         {key + 1}
                                     </TableCell>
@@ -50,9 +64,9 @@ function History() {
                             ))}
                         </TableBody>
                     </Table>
-                </div>
+                </React.Fragment>
                 }
-            </React.Fragment>
+            </div>
         )}
     </SharedSnackbarConsumer>;
 }

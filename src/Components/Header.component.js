@@ -25,7 +25,7 @@ const style = {
 
 const Header = () => (
     <SharedSnackbarConsumer>
-        {({headerInfo, count, onClickNav}) => (
+        {({onClickNav}) => (
             <div style={style.root}>
                 <div style={style.root}>
                     <h1>React Context API</h1>

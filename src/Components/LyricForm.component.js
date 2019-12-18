@@ -25,11 +25,9 @@ const style = {
 
 };
 
-function WeatherForm() {
+function LyricForm() {
     const [bandName, setBandName] = useState('');
-    // const [currentBand, setCurrentBand] = useState('');
     const [songName, setSongName] = useState('');
-    // const [currentSong, setCurrentSong] = useState('');
     const [validate, setValidate] = useState('');
 
     function toTitleCase(str) {
@@ -42,9 +40,13 @@ function WeatherForm() {
     }
 
     function validateFields(func) {
+        const titleCaseArtist = toTitleCase(bandName);
+        const titleCaseSong = toTitleCase(songName);
         if (bandName !== '' && songName !== '') {
             setValidate('');
-            func(bandName, songName);
+            setBandName('');
+            setSongName('');
+            func(titleCaseArtist, titleCaseSong);
         } else {
             setValidate('Please Fill Out Both Fields')
         }
@@ -98,4 +100,4 @@ function WeatherForm() {
     </SharedSnackbarConsumer>;
 }
 
-export default WeatherForm;
+export default LyricForm;
