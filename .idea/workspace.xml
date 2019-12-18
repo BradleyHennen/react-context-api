@@ -1,13 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f4f2728a-0791-4948-9ec5-30723d456ba1" name="Default Changelist" comment="" />
+    <list default="true" id="f4f2728a-0791-4948-9ec5-30723d456ba1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/ButtonA.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/ButtonB.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Header.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/History.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/LyricForm.component.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Context/SharedSnackbar.context.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1UwWDoXqrRZZPjg7qAIBhjqGLMb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -15,7 +33,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\brad.hennen\Desktop\react-context-api\src\Context" />
+      <recent name="C:\Users\brad.hennen\Desktop\react-context-api\src\Components" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -40,10 +65,25 @@
       <option name="presentableId" value="Default" />
       <updated>1576268020652</updated>
       <workItem from="1576268023235" duration="83000" />
+      <workItem from="1576268132507" duration="1614000" />
+      <workItem from="1576522810470" duration="1007000" />
+      <workItem from="1576524178382" duration="7424000" />
+      <workItem from="1576589003489" duration="14950000" />
+      <workItem from="1576681622186" duration="8614000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576698987437">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2610" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576698987437" />
+    <state x="2576" y="257" width="609" height="526" key="find.popup" timestamp="1576525304844">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2576" y="257" width="609" height="526" key="find.popup/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1576525304844" />
   </component>
 </project>
