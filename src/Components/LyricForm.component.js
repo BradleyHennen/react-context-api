@@ -27,9 +27,9 @@ const style = {
 
 function WeatherForm() {
     const [bandName, setBandName] = useState('');
-    const [currentBand, setCurrentBand] = useState('');
+    // const [currentBand, setCurrentBand] = useState('');
     const [songName, setSongName] = useState('');
-    const [currentSong, setCurrentSong] = useState('');
+    // const [currentSong, setCurrentSong] = useState('');
     const [validate, setValidate] = useState('');
 
     function toTitleCase(str) {
@@ -44,19 +44,17 @@ function WeatherForm() {
     function validateFields(func) {
         if (bandName !== '' && songName !== '') {
             setValidate('');
-            setCurrentBand(toTitleCase(bandName));
-            setCurrentSong(toTitleCase(songName));
             func(bandName, songName);
         } else {
             setValidate('Please Fill Out Both Fields')
         }
     }
 
-    function renderLyrics(data) {
+    function renderLyrics(data, currentArtist, currentSong) {
 
         return (
             <div style={style.lyrics}>
-                <h4>Artist: {currentBand}</h4>
+                <h4>Artist: {currentArtist}</h4>
                 <h4>Song: {currentSong}</h4>
                 <p style={style.lyrics}>{data.lyrics}</p>
             </div>
@@ -64,7 +62,7 @@ function WeatherForm() {
     }
 
     return <SharedSnackbarConsumer>
-        {({data, loading, fetchLyrics, noLyrics, showHistory}) => (
+        {({data, loading, fetchLyrics, noLyrics, showHistory, currentArtist, currentSong}) => (
             <React.Fragment>
                 {!showHistory && <div style={style.root}>
                     <h1>Search For Lyrics</h1>
@@ -91,7 +89,7 @@ function WeatherForm() {
                         <div>{}</div>
                     </div>
                     }
-                    {!loading && data && (data.lyrics !== '') && renderLyrics(data)}
+                    {!loading && data && (data.lyrics !== '') && renderLyrics(data, currentArtist, currentSong)}
                     {!loading && (noLyrics !== '') && <p><strong>{noLyrics}</strong></p>}
                 </div>
                 }

@@ -14,6 +14,8 @@ export class SharedSnackbarProvider extends Component {
             showHistory: false,
             showHome: false,
             history: [],
+            currentArtist: '',
+            currentSong: ''
         };
     }
 
@@ -40,7 +42,9 @@ export class SharedSnackbarProvider extends Component {
                     noLyrics: '',
                     data: data,
                     showHome: true,
-                    showHistory: false
+                    showHistory: false,
+                    currentArtist: bandName,
+                    currentSong: songName
                 })
             }
             else {
@@ -48,6 +52,8 @@ export class SharedSnackbarProvider extends Component {
                     loading: false,
                     noLyrics: '',
                     data: data,
+                    currentArtist: bandName,
+                    currentSong: songName,
                     history: [
                         ...this.state.history,
                         {
@@ -93,7 +99,9 @@ export class SharedSnackbarProvider extends Component {
                     noLyrics: this.state.noLyrics,
                     showHistory: this.state.showHistory,
                     onClickNav: this.onClickNav,
-                    history: this.state.history
+                    history: this.state.history,
+                    currentArtist: this.state.currentArtist,
+                    currentSong: this.state.currentSong
                 }}
             >
                 {children}
