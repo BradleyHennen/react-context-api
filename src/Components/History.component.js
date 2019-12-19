@@ -14,7 +14,7 @@ const style = {
         alignItems: 'center',
     },
     table: {
-        minWidth: '100%'
+        minWidth: '100%',
     },
     spinner: {
         paddingTop: '25px'
